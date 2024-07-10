@@ -1,0 +1,19 @@
+2024-07-09 22:05:29 INFO: Link is working
+2024-07-09 22:06:00 WARNING: Retry attempt 1. Status code: 404
+2024-07-09 22:06:06 WARNING: Retry attempt 2. Status code: 404
+2024-07-09 22:06:11 WARNING: Retry attempt 3. Status code: 404
+2024-07-09 22:06:16 WARNING: Retry attempt 4. Status code: 404
+2024-07-09 22:06:22 WARNING: Retry attempt 5. Status code: 404
+2024-07-09 22:06:27 ERROR: Failed to fetch data from https://www.nyc.gov/site/tlc/about/tlc-trip-record-ata.page after 5 attempts
+2024-07-09 22:11:14 INFO: Link is working
+2024-07-09 22:11:14 INFO: data scraped sucessfully
+2024-07-09 22:12:32 INFO: Link is working
+2024-07-09 22:12:32 INFO: data scraped sucessfully
+2024-07-10 09:52:47 INFO: Link is working
+2024-07-10 09:52:47 INFO: data scraped sucessfully
+2024-07-10 09:57:15 INFO: Link is working
+2024-07-10 09:57:16 INFO: data scraped sucessfully
+2024-07-10 09:57:16 INFO: pivot data is ready to use
+2024-07-10 10:01:05 INFO: Link is working
+2024-07-10 10:01:05 INFO: data scraped sucessfully
+2024-07-10 10:01:05 INFO: pivot data is ready to use
