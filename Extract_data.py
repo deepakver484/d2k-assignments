@@ -45,6 +45,28 @@ def get_data(response):
     logging.info('pivot data is ready to use')
     return pivot_df
 
+def get_file(directory,link, retries=5, delay=5):
+    file_name = link.split('/')[-1]
+    
+    for attempt in range(retries):
+        try:
+            logging.info(f'Attempt {attempt + 1} to download {file_name} from {link}')
+            res = requests.get(link, timeout=10)  # Added timeout to prevent hanging requests
+            res.raise_for_status()  # Will raise an HTTPError for bad responses (4xx or 5xx)
+            with open(f'{directory}/{file_name}', 'wb') as f:
+                f.write(res.content)
+            logging.info(f'File {file_name} downloaded successfully')
+            return  # Exit function if successful
+        except requests.exceptions.RequestException as e:
+            logging.error(f'Attempt {attempt + 1} failed with error: {e}')
+            if attempt < retries - 1:
+                logging.info(f'Retrying in {delay} seconds...')
+                time.sleep(delay)  # Wait before retrying
+            else:
+                logging.error(f'Failed to download file {file_name} after {retries} attempts')
+                raise  # Re-raise the exception if all retries fail
+    
+
 
     
 

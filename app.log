@@ -17,3 +17,106 @@
 2024-07-10 10:01:05 INFO: Link is working
 2024-07-10 10:01:05 INFO: data scraped sucessfully
 2024-07-10 10:01:05 INFO: pivot data is ready to use
+2024-07-10 10:12:20 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
+2024-07-10 10:14:41 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
+2024-07-10 10:22:28 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
+2024-07-10 10:24:39 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
+2024-07-10 11:15:17 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
+2024-07-10 11:17:47 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
+2024-07-10 11:17:47 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
+2024-07-10 11:20:20 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
+2024-07-10 11:20:20 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
+2024-07-10 11:22:30 INFO: Attempt 1 to download fhv_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-01.parquet
+2024-07-10 11:26:38 INFO: File fhv_tripdata_2019-01.parquet downloaded successfully
+2024-07-10 11:26:38 INFO: Attempt 1 to download green_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-01.parquet
+2024-07-10 11:26:51 INFO: File green_tripdata_2019-01.parquet downloaded successfully
+2024-07-10 11:26:51 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
+2024-07-10 11:29:08 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
+2024-07-10 11:29:08 INFO: Attempt 1 to download fhv_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-02.parquet
+2024-07-10 11:29:25 INFO: File fhv_tripdata_2019-02.parquet downloaded successfully
+2024-07-10 11:29:25 INFO: Attempt 1 to download fhvhv_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-02.parquet
+2024-07-10 11:39:12 INFO: File fhvhv_tripdata_2019-02.parquet downloaded successfully
+2024-07-10 11:39:12 INFO: Attempt 1 to download green_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-02.parquet
+2024-07-10 11:39:28 INFO: File green_tripdata_2019-02.parquet downloaded successfully
+2024-07-10 11:39:28 INFO: Attempt 1 to download yellow_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-02.parquet
+2024-07-10 11:41:20 INFO: File yellow_tripdata_2019-02.parquet downloaded successfully
+2024-07-10 11:41:20 INFO: Attempt 1 to download fhv_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-03.parquet
+2024-07-10 11:41:36 INFO: File fhv_tripdata_2019-03.parquet downloaded successfully
+2024-07-10 11:41:36 INFO: Attempt 1 to download fhvhv_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-03.parquet
+2024-07-10 11:52:36 INFO: File fhvhv_tripdata_2019-03.parquet downloaded successfully
+2024-07-10 11:52:36 INFO: Attempt 1 to download green_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-03.parquet
+2024-07-10 11:52:48 INFO: File green_tripdata_2019-03.parquet downloaded successfully
+2024-07-10 11:52:48 INFO: Attempt 1 to download yellow_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-03.parquet
+2024-07-10 11:55:05 INFO: File yellow_tripdata_2019-03.parquet downloaded successfully
+2024-07-10 11:55:05 INFO: Attempt 1 to download fhv_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-04.parquet
+2024-07-10 11:55:26 INFO: File fhv_tripdata_2019-04.parquet downloaded successfully
+2024-07-10 11:55:26 INFO: Attempt 1 to download fhvhv_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-04.parquet
+2024-07-10 12:06:12 INFO: File fhvhv_tripdata_2019-04.parquet downloaded successfully
+2024-07-10 12:06:12 INFO: Attempt 1 to download green_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-04.parquet
+2024-07-10 12:06:23 INFO: File green_tripdata_2019-04.parquet downloaded successfully
+2024-07-10 12:06:23 INFO: Attempt 1 to download yellow_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-04.parquet
+2024-07-10 12:08:43 INFO: File yellow_tripdata_2019-04.parquet downloaded successfully
+2024-07-10 12:08:43 INFO: Attempt 1 to download fhv_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-05.parquet
+2024-07-10 12:09:03 INFO: File fhv_tripdata_2019-05.parquet downloaded successfully
+2024-07-10 12:09:03 INFO: Attempt 1 to download fhvhv_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-05.parquet
+2024-07-10 12:20:28 INFO: File fhvhv_tripdata_2019-05.parquet downloaded successfully
+2024-07-10 12:20:28 INFO: Attempt 1 to download green_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-05.parquet
+2024-07-10 12:20:41 INFO: File green_tripdata_2019-05.parquet downloaded successfully
+2024-07-10 12:20:41 INFO: Attempt 1 to download yellow_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-05.parquet
+2024-07-10 12:23:12 INFO: File yellow_tripdata_2019-05.parquet downloaded successfully
+2024-07-10 12:23:12 INFO: Attempt 1 to download fhv_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-06.parquet
+2024-07-10 12:23:36 INFO: File fhv_tripdata_2019-06.parquet downloaded successfully
+2024-07-10 12:23:36 INFO: Attempt 1 to download fhvhv_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-06.parquet
+2024-07-10 12:33:56 INFO: File fhvhv_tripdata_2019-06.parquet downloaded successfully
+2024-07-10 12:33:56 INFO: Attempt 1 to download green_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-06.parquet
+2024-07-10 12:34:06 INFO: File green_tripdata_2019-06.parquet downloaded successfully
+2024-07-10 12:34:06 INFO: Attempt 1 to download yellow_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-06.parquet
+2024-07-10 12:36:05 INFO: File yellow_tripdata_2019-06.parquet downloaded successfully
+2024-07-10 12:36:05 INFO: Attempt 1 to download fhv_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-07.parquet
+2024-07-10 12:36:29 INFO: File fhv_tripdata_2019-07.parquet downloaded successfully
+2024-07-10 12:36:29 INFO: Attempt 1 to download fhvhv_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-07.parquet
+2024-07-10 12:47:31 INFO: File fhvhv_tripdata_2019-07.parquet downloaded successfully
+2024-07-10 12:47:31 INFO: Attempt 1 to download green_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-07.parquet
+2024-07-10 12:47:43 INFO: File green_tripdata_2019-07.parquet downloaded successfully
+2024-07-10 12:47:43 INFO: Attempt 1 to download yellow_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-07.parquet
+2024-07-10 12:49:48 INFO: File yellow_tripdata_2019-07.parquet downloaded successfully
+2024-07-10 12:49:48 INFO: Attempt 1 to download fhv_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-08.parquet
+2024-07-10 12:50:09 INFO: File fhv_tripdata_2019-08.parquet downloaded successfully
+2024-07-10 12:50:09 INFO: Attempt 1 to download fhvhv_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-08.parquet
+2024-07-10 13:00:03 INFO: File fhvhv_tripdata_2019-08.parquet downloaded successfully
+2024-07-10 13:00:03 INFO: Attempt 1 to download green_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-08.parquet
+2024-07-10 13:00:11 INFO: File green_tripdata_2019-08.parquet downloaded successfully
+2024-07-10 13:00:11 INFO: Attempt 1 to download yellow_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-08.parquet
+2024-07-10 13:01:52 INFO: File yellow_tripdata_2019-08.parquet downloaded successfully
+2024-07-10 13:01:52 INFO: Attempt 1 to download fhv_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-09.parquet
+2024-07-10 13:02:12 INFO: File fhv_tripdata_2019-09.parquet downloaded successfully
+2024-07-10 13:02:12 INFO: Attempt 1 to download fhvhv_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-09.parquet
+2024-07-10 13:13:54 INFO: File fhvhv_tripdata_2019-09.parquet downloaded successfully
+2024-07-10 13:13:54 INFO: Attempt 1 to download green_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-09.parquet
+2024-07-10 13:14:03 INFO: File green_tripdata_2019-09.parquet downloaded successfully
+2024-07-10 13:14:03 INFO: Attempt 1 to download yellow_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-09.parquet
+2024-07-10 13:16:36 INFO: File yellow_tripdata_2019-09.parquet downloaded successfully
+2024-07-10 13:16:36 INFO: Attempt 1 to download fhv_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-10.parquet
+2024-07-10 13:17:05 INFO: File fhv_tripdata_2019-10.parquet downloaded successfully
+2024-07-10 13:17:05 INFO: Attempt 1 to download fhvhv_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-10.parquet
+2024-07-10 13:29:58 INFO: File fhvhv_tripdata_2019-10.parquet downloaded successfully
+2024-07-10 13:29:59 INFO: Attempt 1 to download green_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-10.parquet
+2024-07-10 13:30:12 INFO: File green_tripdata_2019-10.parquet downloaded successfully
+2024-07-10 13:30:12 INFO: Attempt 1 to download yellow_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-10.parquet
+2024-07-10 13:32:42 INFO: File yellow_tripdata_2019-10.parquet downloaded successfully
+2024-07-10 13:32:42 INFO: Attempt 1 to download fhv_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-11.parquet
+2024-07-10 13:33:07 INFO: File fhv_tripdata_2019-11.parquet downloaded successfully
+2024-07-10 13:33:07 INFO: Attempt 1 to download fhvhv_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-11.parquet
+2024-07-10 13:44:54 INFO: File fhvhv_tripdata_2019-11.parquet downloaded successfully
+2024-07-10 13:44:54 INFO: Attempt 1 to download green_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-11.parquet
+2024-07-10 13:45:03 INFO: File green_tripdata_2019-11.parquet downloaded successfully
+2024-07-10 13:45:03 INFO: Attempt 1 to download yellow_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-11.parquet
+2024-07-10 13:47:13 INFO: File yellow_tripdata_2019-11.parquet downloaded successfully
+2024-07-10 13:47:13 INFO: Attempt 1 to download fhv_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-12.parquet
+2024-07-10 13:47:42 INFO: File fhv_tripdata_2019-12.parquet downloaded successfully
+2024-07-10 13:47:42 INFO: Attempt 1 to download fhvhv_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-12.parquet
+2024-07-10 14:00:34 INFO: File fhvhv_tripdata_2019-12.parquet downloaded successfully
+2024-07-10 14:00:34 INFO: Attempt 1 to download green_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-12.parquet
+2024-07-10 14:00:43 INFO: File green_tripdata_2019-12.parquet downloaded successfully
+2024-07-10 14:00:43 INFO: Attempt 1 to download yellow_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-12.parquet
+2024-07-10 14:02:32 INFO: File yellow_tripdata_2019-12.parquet downloaded successfully
