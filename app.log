@@ -1,122 +1,472 @@
-2024-07-09 22:05:29 INFO: Link is working
-2024-07-09 22:06:00 WARNING: Retry attempt 1. Status code: 404
-2024-07-09 22:06:06 WARNING: Retry attempt 2. Status code: 404
-2024-07-09 22:06:11 WARNING: Retry attempt 3. Status code: 404
-2024-07-09 22:06:16 WARNING: Retry attempt 4. Status code: 404
-2024-07-09 22:06:22 WARNING: Retry attempt 5. Status code: 404
-2024-07-09 22:06:27 ERROR: Failed to fetch data from https://www.nyc.gov/site/tlc/about/tlc-trip-record-ata.page after 5 attempts
-2024-07-09 22:11:14 INFO: Link is working
-2024-07-09 22:11:14 INFO: data scraped sucessfully
-2024-07-09 22:12:32 INFO: Link is working
-2024-07-09 22:12:32 INFO: data scraped sucessfully
-2024-07-10 09:52:47 INFO: Link is working
-2024-07-10 09:52:47 INFO: data scraped sucessfully
-2024-07-10 09:57:15 INFO: Link is working
-2024-07-10 09:57:16 INFO: data scraped sucessfully
-2024-07-10 09:57:16 INFO: pivot data is ready to use
-2024-07-10 10:01:05 INFO: Link is working
-2024-07-10 10:01:05 INFO: data scraped sucessfully
-2024-07-10 10:01:05 INFO: pivot data is ready to use
-2024-07-10 10:12:20 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
-2024-07-10 10:14:41 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
-2024-07-10 10:22:28 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
-2024-07-10 10:24:39 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
-2024-07-10 11:15:17 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
-2024-07-10 11:17:47 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
-2024-07-10 11:17:47 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
-2024-07-10 11:20:20 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
-2024-07-10 11:20:20 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
-2024-07-10 11:22:30 INFO: Attempt 1 to download fhv_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-01.parquet
-2024-07-10 11:26:38 INFO: File fhv_tripdata_2019-01.parquet downloaded successfully
-2024-07-10 11:26:38 INFO: Attempt 1 to download green_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-01.parquet
-2024-07-10 11:26:51 INFO: File green_tripdata_2019-01.parquet downloaded successfully
-2024-07-10 11:26:51 INFO: Attempt 1 to download yellow_tripdata_2019-01.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-01.parquet
-2024-07-10 11:29:08 INFO: File yellow_tripdata_2019-01.parquet downloaded successfully
-2024-07-10 11:29:08 INFO: Attempt 1 to download fhv_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-02.parquet
-2024-07-10 11:29:25 INFO: File fhv_tripdata_2019-02.parquet downloaded successfully
-2024-07-10 11:29:25 INFO: Attempt 1 to download fhvhv_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-02.parquet
-2024-07-10 11:39:12 INFO: File fhvhv_tripdata_2019-02.parquet downloaded successfully
-2024-07-10 11:39:12 INFO: Attempt 1 to download green_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-02.parquet
-2024-07-10 11:39:28 INFO: File green_tripdata_2019-02.parquet downloaded successfully
-2024-07-10 11:39:28 INFO: Attempt 1 to download yellow_tripdata_2019-02.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-02.parquet
-2024-07-10 11:41:20 INFO: File yellow_tripdata_2019-02.parquet downloaded successfully
-2024-07-10 11:41:20 INFO: Attempt 1 to download fhv_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-03.parquet
-2024-07-10 11:41:36 INFO: File fhv_tripdata_2019-03.parquet downloaded successfully
-2024-07-10 11:41:36 INFO: Attempt 1 to download fhvhv_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-03.parquet
-2024-07-10 11:52:36 INFO: File fhvhv_tripdata_2019-03.parquet downloaded successfully
-2024-07-10 11:52:36 INFO: Attempt 1 to download green_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-03.parquet
-2024-07-10 11:52:48 INFO: File green_tripdata_2019-03.parquet downloaded successfully
-2024-07-10 11:52:48 INFO: Attempt 1 to download yellow_tripdata_2019-03.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-03.parquet
-2024-07-10 11:55:05 INFO: File yellow_tripdata_2019-03.parquet downloaded successfully
-2024-07-10 11:55:05 INFO: Attempt 1 to download fhv_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-04.parquet
-2024-07-10 11:55:26 INFO: File fhv_tripdata_2019-04.parquet downloaded successfully
-2024-07-10 11:55:26 INFO: Attempt 1 to download fhvhv_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-04.parquet
-2024-07-10 12:06:12 INFO: File fhvhv_tripdata_2019-04.parquet downloaded successfully
-2024-07-10 12:06:12 INFO: Attempt 1 to download green_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-04.parquet
-2024-07-10 12:06:23 INFO: File green_tripdata_2019-04.parquet downloaded successfully
-2024-07-10 12:06:23 INFO: Attempt 1 to download yellow_tripdata_2019-04.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-04.parquet
-2024-07-10 12:08:43 INFO: File yellow_tripdata_2019-04.parquet downloaded successfully
-2024-07-10 12:08:43 INFO: Attempt 1 to download fhv_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-05.parquet
-2024-07-10 12:09:03 INFO: File fhv_tripdata_2019-05.parquet downloaded successfully
-2024-07-10 12:09:03 INFO: Attempt 1 to download fhvhv_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-05.parquet
-2024-07-10 12:20:28 INFO: File fhvhv_tripdata_2019-05.parquet downloaded successfully
-2024-07-10 12:20:28 INFO: Attempt 1 to download green_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-05.parquet
-2024-07-10 12:20:41 INFO: File green_tripdata_2019-05.parquet downloaded successfully
-2024-07-10 12:20:41 INFO: Attempt 1 to download yellow_tripdata_2019-05.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-05.parquet
-2024-07-10 12:23:12 INFO: File yellow_tripdata_2019-05.parquet downloaded successfully
-2024-07-10 12:23:12 INFO: Attempt 1 to download fhv_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-06.parquet
-2024-07-10 12:23:36 INFO: File fhv_tripdata_2019-06.parquet downloaded successfully
-2024-07-10 12:23:36 INFO: Attempt 1 to download fhvhv_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-06.parquet
-2024-07-10 12:33:56 INFO: File fhvhv_tripdata_2019-06.parquet downloaded successfully
-2024-07-10 12:33:56 INFO: Attempt 1 to download green_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-06.parquet
-2024-07-10 12:34:06 INFO: File green_tripdata_2019-06.parquet downloaded successfully
-2024-07-10 12:34:06 INFO: Attempt 1 to download yellow_tripdata_2019-06.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-06.parquet
-2024-07-10 12:36:05 INFO: File yellow_tripdata_2019-06.parquet downloaded successfully
-2024-07-10 12:36:05 INFO: Attempt 1 to download fhv_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-07.parquet
-2024-07-10 12:36:29 INFO: File fhv_tripdata_2019-07.parquet downloaded successfully
-2024-07-10 12:36:29 INFO: Attempt 1 to download fhvhv_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-07.parquet
-2024-07-10 12:47:31 INFO: File fhvhv_tripdata_2019-07.parquet downloaded successfully
-2024-07-10 12:47:31 INFO: Attempt 1 to download green_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-07.parquet
-2024-07-10 12:47:43 INFO: File green_tripdata_2019-07.parquet downloaded successfully
-2024-07-10 12:47:43 INFO: Attempt 1 to download yellow_tripdata_2019-07.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-07.parquet
-2024-07-10 12:49:48 INFO: File yellow_tripdata_2019-07.parquet downloaded successfully
-2024-07-10 12:49:48 INFO: Attempt 1 to download fhv_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-08.parquet
-2024-07-10 12:50:09 INFO: File fhv_tripdata_2019-08.parquet downloaded successfully
-2024-07-10 12:50:09 INFO: Attempt 1 to download fhvhv_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-08.parquet
-2024-07-10 13:00:03 INFO: File fhvhv_tripdata_2019-08.parquet downloaded successfully
-2024-07-10 13:00:03 INFO: Attempt 1 to download green_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-08.parquet
-2024-07-10 13:00:11 INFO: File green_tripdata_2019-08.parquet downloaded successfully
-2024-07-10 13:00:11 INFO: Attempt 1 to download yellow_tripdata_2019-08.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-08.parquet
-2024-07-10 13:01:52 INFO: File yellow_tripdata_2019-08.parquet downloaded successfully
-2024-07-10 13:01:52 INFO: Attempt 1 to download fhv_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-09.parquet
-2024-07-10 13:02:12 INFO: File fhv_tripdata_2019-09.parquet downloaded successfully
-2024-07-10 13:02:12 INFO: Attempt 1 to download fhvhv_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-09.parquet
-2024-07-10 13:13:54 INFO: File fhvhv_tripdata_2019-09.parquet downloaded successfully
-2024-07-10 13:13:54 INFO: Attempt 1 to download green_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-09.parquet
-2024-07-10 13:14:03 INFO: File green_tripdata_2019-09.parquet downloaded successfully
-2024-07-10 13:14:03 INFO: Attempt 1 to download yellow_tripdata_2019-09.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-09.parquet
-2024-07-10 13:16:36 INFO: File yellow_tripdata_2019-09.parquet downloaded successfully
-2024-07-10 13:16:36 INFO: Attempt 1 to download fhv_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-10.parquet
-2024-07-10 13:17:05 INFO: File fhv_tripdata_2019-10.parquet downloaded successfully
-2024-07-10 13:17:05 INFO: Attempt 1 to download fhvhv_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-10.parquet
-2024-07-10 13:29:58 INFO: File fhvhv_tripdata_2019-10.parquet downloaded successfully
-2024-07-10 13:29:59 INFO: Attempt 1 to download green_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-10.parquet
-2024-07-10 13:30:12 INFO: File green_tripdata_2019-10.parquet downloaded successfully
-2024-07-10 13:30:12 INFO: Attempt 1 to download yellow_tripdata_2019-10.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-10.parquet
-2024-07-10 13:32:42 INFO: File yellow_tripdata_2019-10.parquet downloaded successfully
-2024-07-10 13:32:42 INFO: Attempt 1 to download fhv_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-11.parquet
-2024-07-10 13:33:07 INFO: File fhv_tripdata_2019-11.parquet downloaded successfully
-2024-07-10 13:33:07 INFO: Attempt 1 to download fhvhv_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-11.parquet
-2024-07-10 13:44:54 INFO: File fhvhv_tripdata_2019-11.parquet downloaded successfully
-2024-07-10 13:44:54 INFO: Attempt 1 to download green_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-11.parquet
-2024-07-10 13:45:03 INFO: File green_tripdata_2019-11.parquet downloaded successfully
-2024-07-10 13:45:03 INFO: Attempt 1 to download yellow_tripdata_2019-11.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-11.parquet
-2024-07-10 13:47:13 INFO: File yellow_tripdata_2019-11.parquet downloaded successfully
-2024-07-10 13:47:13 INFO: Attempt 1 to download fhv_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhv_tripdata_2019-12.parquet
-2024-07-10 13:47:42 INFO: File fhv_tripdata_2019-12.parquet downloaded successfully
-2024-07-10 13:47:42 INFO: Attempt 1 to download fhvhv_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2019-12.parquet
-2024-07-10 14:00:34 INFO: File fhvhv_tripdata_2019-12.parquet downloaded successfully
-2024-07-10 14:00:34 INFO: Attempt 1 to download green_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-12.parquet
-2024-07-10 14:00:43 INFO: File green_tripdata_2019-12.parquet downloaded successfully
-2024-07-10 14:00:43 INFO: Attempt 1 to download yellow_tripdata_2019-12.parquet from https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2019-12.parquet
-2024-07-10 14:02:32 INFO: File yellow_tripdata_2019-12.parquet downloaded successfully
+2024-07-12 12:54:08 INFO: Closing down clientserver connection
+2024-07-12 12:54:08 INFO: Closing down clientserver connection
+2024-07-12 12:51:09 INFO: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-07-12 12:54:08 INFO: Closing down clientserver connection
+2024-07-12 12:54:10 INFO: Closing down clientserver connection
+2024-07-12 12:54:10 INFO: Closing down clientserver connection
+2024-07-12 12:54:08 INFO: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+2024-07-12 12:54:12 INFO: Closing down clientserver connection
+2024-07-12 12:54:12 INFO: Closing down clientserver connection
+2024-07-12 12:51:09 INFO: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-07-12 12:54:12 INFO: Closing down clientserver connection
+2024-07-12 12:54:14 INFO: Closing down clientserver connection
+2024-07-12 12:54:14 INFO: Closing down clientserver connection
+2024-07-12 12:54:12 INFO: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+2024-07-12 12:54:16 INFO: Closing down clientserver connection
+2024-07-12 12:54:16 INFO: Closing down clientserver connection
+2024-07-12 12:51:09 INFO: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-07-12 12:54:16 INFO: Closing down clientserver connection
+2024-07-12 12:54:18 INFO: Closing down clientserver connection
+2024-07-12 12:54:18 INFO: Closing down clientserver connection
+2024-07-12 12:54:16 INFO: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+2024-07-12 12:54:20 INFO: Closing down clientserver connection
+2024-07-12 12:54:20 INFO: Closing down clientserver connection
+2024-07-12 12:51:09 INFO: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-07-12 12:54:20 INFO: Closing down clientserver connection
+2024-07-12 12:54:23 INFO: Closing down clientserver connection
+2024-07-12 12:54:23 INFO: Closing down clientserver connection
+2024-07-12 12:54:20 INFO: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+2024-07-12 12:54:25 INFO: Closing down clientserver connection
+2024-07-12 12:54:25 INFO: Closing down clientserver connection
+2024-07-12 12:51:09 INFO: Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-07-12 12:51:10 INFO: Error while sending or receiving.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-07-12 12:54:25 INFO: Closing down clientserver connection
+2024-07-12 12:54:25 INFO: Closing down clientserver connection
+2024-07-12 12:54:27 INFO: Closing down clientserver connection
+2024-07-12 12:54:27 INFO: Closing down clientserver connection
+2024-07-12 12:54:25 ERROR: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\pyspark\errors\exceptions\captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-07-12 12:54:25 INFO: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+2024-07-12 12:54:27 INFO: Closing down clientserver connection
+2024-07-12 12:54:29 INFO: Closing down clientserver connection
+2024-07-12 12:54:29 INFO: Closing down clientserver connection
+2024-07-12 12:54:29 INFO: Closing down clientserver connection
+2024-07-12 12:54:29 INFO: Closing down clientserver connection
+2024-07-12 12:54:31 INFO: Closing down clientserver connection
+2024-07-12 12:54:31 INFO: Closing down clientserver connection
+2024-07-12 12:54:31 INFO: Closing down clientserver connection
+2024-07-12 12:55:23 INFO: spark connection build succesfully
+2024-07-12 12:55:30 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-01.parquet
+2024-07-12 12:55:44 INFO: data cleaned succesfully
+2024-07-12 12:55:44 INFO: trip_duration column created
+2024-07-12 12:55:44 INFO: average_speed column created
+2024-07-12 12:55:58 INFO: Error while receiving.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2024-07-12 12:55:58 INFO: Closing down clientserver connection
+2024-07-12 12:55:58 ERROR: Exception while sending command.
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Deepak Verma\Desktop\d2k-assignments\venv\Lib\site-packages\py4j\clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2024-07-12 12:55:58 INFO: Closing down clientserver connection
+2024-07-12 12:56:00 INFO: Closing down clientserver connection
+2024-07-12 12:56:00 INFO: Closing down clientserver connection
+2024-07-12 12:56:00 INFO: Closing down clientserver connection
