@@ -6,6 +6,7 @@ import os
 import sys
 import re
 
+
 # Set recursion limit higher to avoid recursion errors
 sys.setrecursionlimit(1500)
 
@@ -82,7 +83,6 @@ def clean_yellow_taxi(file, database):
     return 'completed'
 
 
-
 def clean_green_taxi(file, database):
     """
     This function reads a parquet file, cleans the data, computes additional columns, and appends the cleaned data to an SQLite database.
@@ -155,3 +155,4 @@ def clean_green_taxi(file, database):
         logging.error(f'An error occurred while stopping the Spark session: {e}')
 
     return 'completed'
+

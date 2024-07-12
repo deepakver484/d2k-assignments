@@ -641,3 +641,18 @@
 2024-07-12 22:02:12 INFO: data saved into the database
 2024-07-12 22:02:12 INFO: connection closed
 2024-07-12 22:02:12 INFO: green_trips data saved into the database successfully
+2024-07-12 22:38:54 INFO: database created
+2024-07-12 22:38:54 INFO: yellow_taxi_aggregate_data table created
+2024-07-12 22:38:54 INFO: yellow_taxi_aggregate_data table created
+2024-07-12 22:46:25 INFO: database created
+2024-07-12 22:46:25 INFO: yellow_taxi_aggregate_data table created
+2024-07-12 22:46:25 INFO: green_taxi_aggregate_data table created
+2024-07-12 22:57:31 INFO: yellow taxi grouped calculated
+2024-07-12 22:57:31 INFO: yellow_taxi_aggregate_data table updated with the data
+2024-07-12 22:59:11 INFO: database created
+2024-07-12 22:59:11 INFO: yellow_taxi_aggregate_data table created
+2024-07-12 22:59:11 INFO: green_taxi_aggregate_data table created
+2024-07-12 23:04:33 INFO: yellow taxi grouped calculated
+2024-07-12 23:04:33 INFO: yellow_taxi_aggregate_data table updated with the data
+2024-07-12 23:04:52 INFO: green taxi grouped calculated
+2024-07-12 23:04:52 INFO: green_taxi_aggregate_data table updated with the data

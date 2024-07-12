@@ -4,6 +4,9 @@ import Extract_data as ed
 import Clean_data as cd
 import os
 import Sql_database as sd
+import analysis as a
+import sqlite3
+
 
 logger = logging.getLogger()
 
@@ -44,7 +47,43 @@ df = pd.read_csv('scraped_data/data_link.csv')
 #         continue
 dataset = sd.database_creation('testdb.db')
 
-df['yellow_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_yellow_taxi(file, dataset))
-logging.info('yellow_trips data saved into the database successfully')
-df['green_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_green_taxi(file, dataset))
-logging.info('green_trips data saved into the database successfully')
+# df['yellow_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_yellow_taxi(file, dataset))
+# logging.info('yellow_trips data saved into the database successfully')
+# df['green_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_green_taxi(file, dataset))
+# logging.info('green_trips data saved into the database successfully')
+
+
+# Define your SQL queries
+query_green_taxi = '''
+SELECT 
+    date(lpep_pickup_datetime) as Date, 
+    COUNT(vendorid) AS total_trip,
+    AVG(fare_amount) AS avg_fare_amount
+FROM
+    green_taxi
+GROUP BY date(lpep_pickup_datetime) 
+ORDER BY date(lpep_pickup_datetime) 
+'''
+
+query_yellow_taxi = '''
+SELECT 
+    date(tpep_pickup_datetime) as Date, 
+    COUNT(vendorid) AS total_trip,
+    AVG(fare_amount) AS avg_fare_amount
+FROM
+    yellow_taxi
+GROUP BY date(tpep_pickup_datetime)
+ORDER BY Date
+'''
+
+con = sqlite3.connect("testdb.db")
+
+df_yellow_taxi = a.fetch_data(query_yellow_taxi)
+logging.info('yellow taxi grouped calculated')
+df_yellow_taxi.to_sql('yellow_taxi_aggregate_data', con, if_exists="append", index=False)
+logging.info('yellow_taxi_aggregate_data table updated with the data')
+
+df_green_taxi = a.fetch_data(query_green_taxi)
+logging.info('green taxi grouped calculated')
+df_green_taxi.to_sql('green_taxi_aggregate_data', con, if_exists="append", index=False)
+logging.info('green_taxi_aggregate_data table updated with the data')

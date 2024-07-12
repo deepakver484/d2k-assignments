@@ -12,32 +12,9 @@ def fetch_data(query):
     print(df)
     return df
 
-# Define your SQL queries
-query_green_taxi = '''
-SELECT 
-    date(lpep_pickup_datetime) as Date, 
-    COUNT(vendorid) AS total_trip,
-    AVG(fare_amount) AS avg_fare_amount
-FROM
-    green_taxi
-GROUP BY date(lpep_pickup_datetime) as Date
-ORDER BY date(lpep_pickup_datetime) as Date
-'''
-
-query_yellow_taxi = '''
-SELECT 
-    date(tpep_pickup_datetime) as Date, 
-    COUNT(vendorid) AS total_trip,
-    AVG(fare_amount) AS avg_fare_amount
-FROM
-    yellow_taxi
-GROUP BY date(tpep_pickup_datetime)
-ORDER BY Date
-'''
-
 # Fetch data
 # df_green_taxi = fetch_data(query_green_taxi)
-df_yellow_taxi = fetch_data(query_yellow_taxi)
+# df_yellow_taxi = fetch_data()
 
 # Streamlit app
 # st.title('Taxi Data Analysis')
