@@ -21,7 +21,7 @@ link = 'https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page'
 
 df = pd.read_csv('scraped_data/data_link.csv')
 
-for link in df[df.columns[1:]].values.flatten():
+for link in df[df.columns['yellow_trips', 'green_trips']].values.flatten():
     if pd.notna(link):
         ed.get_file('scraped_data',link)
     else:
