@@ -4,7 +4,7 @@ import sqlite3
 import logging
 import os
 import sys
-
+import re
 
 # Set recursion limit higher to avoid recursion errors
 sys.setrecursionlimit(1500)
@@ -17,6 +17,9 @@ def clean_yellow_taxi(file, database):
     file (str): The name of the parquet file to process.
     database (str): The path to the SQLite database where data will be stored.
     """
+    date_string = re.sub(r'[^0-9-]', '', file)
+    year = date_string.split('-')[0]
+    month = date_string.split('-')[1]
     try:
         # Check if the parquet file exists
         file_path = f'scraped_data/{file}'
@@ -55,6 +58,10 @@ def clean_yellow_taxi(file, database):
         df['tpep_dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
         logging.info('Converted datetime columns to timestamp')
 
+
+        #  removing the data which is not belongs to the given month and year
+        df = df[(df['tpep_pickup_datetime'].dt.month == int(month)) & (df['tpep_pickup_datetime'].dt.year == int(year))]
+        logging.info(f'Dropping rows having wrong date, remaining rows: {len(df)}')
         # Compute time difference in seconds
         df['trip_duration'] = (df['tpep_dropoff_datetime'] - df['tpep_pickup_datetime']).dt.total_seconds()
         logging.info('Created trip_duration column')
@@ -84,6 +91,9 @@ def clean_green_taxi(file, database):
     file (str): The name of the parquet file to process.
     database (str): The path to the SQLite database where data will be stored.
     """
+    date_string = re.sub(r'[^0-9-]', '', file)
+    year = date_string.split('-')[0]
+    month = date_string.split('-')[1]
     try:
         # Check if the parquet file exists
         file_path = f'scraped_data/{file}'
@@ -121,6 +131,11 @@ def clean_green_taxi(file, database):
         df['lpep_pickup_datetime'] = pd.to_datetime(df['lpep_pickup_datetime'])
         df['lpep_dropoff_datetime'] = pd.to_datetime(df['lpep_dropoff_datetime'])
         logging.info('Converted datetime columns to timestamp')
+
+
+        #  removing the data which is not belongs to the given month and year
+        df = df[(df['lpep_pickup_datetime'].dt.month == int(month)) & (df['lpep_pickup_datetime'].dt.year == int(year))]
+        logging.info(f'Dropping rows having wrong date, remaining rows: {len(df)}')
 
         # Compute time difference in seconds
         df['trip_duration'] = (df['lpep_dropoff_datetime'] - df['lpep_pickup_datetime']).dt.total_seconds()

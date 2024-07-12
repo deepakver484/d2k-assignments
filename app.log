@@ -341,3 +341,303 @@
 2024-07-12 19:11:27 INFO: database connection stablised
 2024-07-12 19:11:33 INFO: data saved into the database
 2024-07-12 19:11:33 INFO: connection closed
+2024-07-12 21:05:49 INFO: database created
+2024-07-12 21:05:49 INFO: green_taxi table created
+2024-07-12 21:05:49 INFO: Yellow_taxi table created
+2024-07-12 21:05:53 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-01.parquet
+2024-07-12 21:05:59 INFO: Selected required columns
+2024-07-12 21:06:02 INFO: Dropped rows with null values, remaining rows: 2811730
+2024-07-12 21:06:03 INFO: Converted datetime columns to timestamp
+2024-07-12 21:06:03 INFO: Created trip_duration column
+2024-07-12 21:06:03 INFO: Created average_speed column
+2024-07-12 21:06:03 INFO: database connection stablised
+2024-07-12 21:06:03 INFO: data saved into the database
+2024-07-12 21:06:03 INFO: connection closed
+2024-07-12 21:06:06 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-02.parquet
+2024-07-12 21:06:07 INFO: Selected required columns
+2024-07-12 21:06:10 INFO: Dropped rows with null values, remaining rows: 7019707
+2024-07-12 21:06:10 INFO: Converted datetime columns to timestamp
+2024-07-12 21:06:12 INFO: Created trip_duration column
+2024-07-12 21:06:12 INFO: Created average_speed column
+2024-07-12 21:06:12 INFO: database connection stablised
+2024-07-12 21:06:12 INFO: data saved into the database
+2024-07-12 21:06:12 INFO: connection closed
+2024-07-12 21:06:15 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-03.parquet
+2024-07-12 21:06:16 INFO: Selected required columns
+2024-07-12 21:06:20 INFO: Dropped rows with null values, remaining rows: 7833146
+2024-07-12 21:06:22 INFO: Converted datetime columns to timestamp
+2024-07-12 21:06:24 INFO: Created trip_duration column
+2024-07-12 21:06:24 INFO: Created average_speed column
+2024-07-12 21:06:24 INFO: database connection stablised
+2024-07-12 21:06:24 INFO: data saved into the database
+2024-07-12 21:06:24 INFO: connection closed
+2024-07-12 21:06:27 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-04.parquet
+2024-07-12 21:08:39 INFO: database created
+2024-07-12 21:08:39 INFO: green_taxi table created
+2024-07-12 21:08:39 INFO: Yellow_taxi table created
+2024-07-12 21:08:43 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-01.parquet
+2024-07-12 21:08:44 INFO: Selected required columns
+2024-07-12 21:08:47 INFO: Dropped rows with null values, remaining rows: 2811730
+2024-07-12 21:08:47 INFO: Converted datetime columns to timestamp
+2024-07-12 21:08:47 INFO: Dropping rows having wrong date, remaining rows: 0
+2024-07-12 21:08:47 INFO: Created trip_duration column
+2024-07-12 21:08:47 INFO: Created average_speed column
+2024-07-12 21:08:47 INFO: database connection stablised
+2024-07-12 21:08:47 INFO: data saved into the database
+2024-07-12 21:08:47 INFO: connection closed
+2024-07-12 21:08:50 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-02.parquet
+2024-07-12 21:08:51 INFO: Selected required columns
+2024-07-12 21:08:54 INFO: Dropped rows with null values, remaining rows: 7019707
+2024-07-12 21:08:54 INFO: Converted datetime columns to timestamp
+2024-07-12 21:08:55 INFO: Dropping rows having wrong date, remaining rows: 0
+2024-07-12 21:08:55 INFO: Created trip_duration column
+2024-07-12 21:08:55 INFO: Created average_speed column
+2024-07-12 21:08:55 INFO: database connection stablised
+2024-07-12 21:08:55 INFO: data saved into the database
+2024-07-12 21:08:55 INFO: connection closed
+2024-07-12 21:08:58 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-03.parquet
+2024-07-12 21:10:26 INFO: database created
+2024-07-12 21:10:26 INFO: green_taxi table created
+2024-07-12 21:10:26 INFO: Yellow_taxi table created
+2024-07-12 21:10:30 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-01.parquet
+2024-07-12 21:10:31 INFO: Selected required columns
+2024-07-12 21:10:35 INFO: Dropped rows with null values, remaining rows: 2811730
+2024-07-12 21:10:35 INFO: Converted datetime columns to timestamp
+2024-07-12 21:10:37 INFO: Dropping rows having wrong date, remaining rows: 2811656
+2024-07-12 21:10:37 INFO: Created trip_duration column
+2024-07-12 21:10:37 INFO: Created average_speed column
+2024-07-12 21:10:37 INFO: database connection stablised
+2024-07-12 21:11:29 INFO: data saved into the database
+2024-07-12 21:11:29 INFO: connection closed
+2024-07-12 21:11:32 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-02.parquet
+2024-07-12 21:11:34 INFO: Selected required columns
+2024-07-12 21:11:37 INFO: Dropped rows with null values, remaining rows: 7019707
+2024-07-12 21:11:37 INFO: Converted datetime columns to timestamp
+2024-07-12 21:11:41 INFO: Dropping rows having wrong date, remaining rows: 7019081
+2024-07-12 21:11:41 INFO: Created trip_duration column
+2024-07-12 21:11:41 INFO: Created average_speed column
+2024-07-12 21:11:41 INFO: database connection stablised
+2024-07-12 21:15:38 INFO: data saved into the database
+2024-07-12 21:15:39 INFO: connection closed
+2024-07-12 21:15:43 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-03.parquet
+2024-07-12 21:15:45 INFO: Selected required columns
+2024-07-12 21:15:50 INFO: Dropped rows with null values, remaining rows: 7833146
+2024-07-12 21:15:50 INFO: Converted datetime columns to timestamp
+2024-07-12 21:15:54 INFO: Dropping rows having wrong date, remaining rows: 7832636
+2024-07-12 21:15:54 INFO: Created trip_duration column
+2024-07-12 21:15:55 INFO: Created average_speed column
+2024-07-12 21:15:55 INFO: database connection stablised
+2024-07-12 21:21:04 INFO: data saved into the database
+2024-07-12 21:21:04 INFO: connection closed
+2024-07-12 21:21:10 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-04.parquet
+2024-07-12 21:21:12 INFO: Selected required columns
+2024-07-12 21:21:15 INFO: Dropped rows with null values, remaining rows: 7433493
+2024-07-12 21:21:16 INFO: Converted datetime columns to timestamp
+2024-07-12 21:21:19 INFO: Dropping rows having wrong date, remaining rows: 7433180
+2024-07-12 21:21:20 INFO: Created trip_duration column
+2024-07-12 21:21:20 INFO: Created average_speed column
+2024-07-12 21:21:20 INFO: database connection stablised
+2024-07-12 21:26:15 INFO: data saved into the database
+2024-07-12 21:26:15 INFO: connection closed
+2024-07-12 21:26:20 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-05.parquet
+2024-07-12 21:26:21 INFO: Selected required columns
+2024-07-12 21:26:24 INFO: Dropped rows with null values, remaining rows: 7565675
+2024-07-12 21:26:24 INFO: Converted datetime columns to timestamp
+2024-07-12 21:26:27 INFO: Dropping rows having wrong date, remaining rows: 7565298
+2024-07-12 21:26:28 INFO: Created trip_duration column
+2024-07-12 21:26:28 INFO: Created average_speed column
+2024-07-12 21:26:28 INFO: database connection stablised
+2024-07-12 21:31:27 INFO: data saved into the database
+2024-07-12 21:31:27 INFO: connection closed
+2024-07-12 21:31:31 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-06.parquet
+2024-07-12 21:31:33 INFO: Selected required columns
+2024-07-12 21:31:35 INFO: Dropped rows with null values, remaining rows: 6940813
+2024-07-12 21:31:36 INFO: Converted datetime columns to timestamp
+2024-07-12 21:31:39 INFO: Dropping rows having wrong date, remaining rows: 6940279
+2024-07-12 21:31:39 INFO: Created trip_duration column
+2024-07-12 21:31:39 INFO: Created average_speed column
+2024-07-12 21:31:39 INFO: database connection stablised
+2024-07-12 21:35:39 INFO: data saved into the database
+2024-07-12 21:35:39 INFO: connection closed
+2024-07-12 21:35:43 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-07.parquet
+2024-07-12 21:35:44 INFO: Selected required columns
+2024-07-12 21:35:47 INFO: Dropped rows with null values, remaining rows: 6276460
+2024-07-12 21:35:47 INFO: Converted datetime columns to timestamp
+2024-07-12 21:35:50 INFO: Dropping rows having wrong date, remaining rows: 6276175
+2024-07-12 21:35:50 INFO: Created trip_duration column
+2024-07-12 21:35:51 INFO: Created average_speed column
+2024-07-12 21:35:51 INFO: database connection stablised
+2024-07-12 21:39:04 INFO: data saved into the database
+2024-07-12 21:39:04 INFO: connection closed
+2024-07-12 21:39:08 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-08.parquet
+2024-07-12 21:39:09 INFO: Selected required columns
+2024-07-12 21:39:12 INFO: Dropped rows with null values, remaining rows: 6040036
+2024-07-12 21:39:12 INFO: Converted datetime columns to timestamp
+2024-07-12 21:39:14 INFO: Dropping rows having wrong date, remaining rows: 6039530
+2024-07-12 21:39:15 INFO: Created trip_duration column
+2024-07-12 21:39:15 INFO: Created average_speed column
+2024-07-12 21:39:15 INFO: database connection stablised
+2024-07-12 21:41:57 INFO: data saved into the database
+2024-07-12 21:41:57 INFO: connection closed
+2024-07-12 21:42:02 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-09.parquet
+2024-07-12 21:42:03 INFO: Selected required columns
+2024-07-12 21:42:07 INFO: Dropped rows with null values, remaining rows: 6533698
+2024-07-12 21:42:07 INFO: Converted datetime columns to timestamp
+2024-07-12 21:42:10 INFO: Dropping rows having wrong date, remaining rows: 6533306
+2024-07-12 21:42:10 INFO: Created trip_duration column
+2024-07-12 21:42:11 INFO: Created average_speed column
+2024-07-12 21:42:11 INFO: database connection stablised
+2024-07-12 21:45:24 INFO: data saved into the database
+2024-07-12 21:45:24 INFO: connection closed
+2024-07-12 21:45:29 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-10.parquet
+2024-07-12 21:45:30 INFO: Selected required columns
+2024-07-12 21:45:33 INFO: Dropped rows with null values, remaining rows: 7167168
+2024-07-12 21:45:34 INFO: Converted datetime columns to timestamp
+2024-07-12 21:45:37 INFO: Dropping rows having wrong date, remaining rows: 7166865
+2024-07-12 21:45:37 INFO: Created trip_duration column
+2024-07-12 21:45:38 INFO: Created average_speed column
+2024-07-12 21:45:38 INFO: database connection stablised
+2024-07-12 21:50:49 INFO: data saved into the database
+2024-07-12 21:50:50 INFO: connection closed
+2024-07-12 21:50:57 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-11.parquet
+2024-07-12 21:50:58 INFO: Selected required columns
+2024-07-12 21:51:01 INFO: Dropped rows with null values, remaining rows: 6830618
+2024-07-12 21:51:01 INFO: Converted datetime columns to timestamp
+2024-07-12 21:51:04 INFO: Dropping rows having wrong date, remaining rows: 6829970
+2024-07-12 21:51:04 INFO: Created trip_duration column
+2024-07-12 21:51:05 INFO: Created average_speed column
+2024-07-12 21:51:05 INFO: database connection stablised
+2024-07-12 21:55:11 INFO: data saved into the database
+2024-07-12 21:55:11 INFO: connection closed
+2024-07-12 21:55:15 INFO: Read parquet file: scraped_data/yellow_tripdata_2019-12.parquet
+2024-07-12 21:55:17 INFO: Selected required columns
+2024-07-12 21:55:19 INFO: Dropped rows with null values, remaining rows: 6845299
+2024-07-12 21:55:19 INFO: Converted datetime columns to timestamp
+2024-07-12 21:55:22 INFO: Dropping rows having wrong date, remaining rows: 6844915
+2024-07-12 21:55:23 INFO: Created trip_duration column
+2024-07-12 21:55:23 INFO: Created average_speed column
+2024-07-12 21:55:23 INFO: database connection stablised
+2024-07-12 22:00:31 INFO: data saved into the database
+2024-07-12 22:00:31 INFO: connection closed
+2024-07-12 22:00:31 INFO: yellow_trips data saved into the database successfully
+2024-07-12 22:00:32 INFO: Read parquet file: scraped_data/green_tripdata_2019-01.parquet
+2024-07-12 22:00:33 INFO: Selected required columns
+2024-07-12 22:00:33 INFO: Dropped rows with null values, remaining rows: 84399
+2024-07-12 22:00:33 INFO: Converted datetime columns to timestamp
+2024-07-12 22:00:33 INFO: Dropping rows having wrong date, remaining rows: 84374
+2024-07-12 22:00:33 INFO: Created trip_duration column
+2024-07-12 22:00:33 INFO: Created average_speed column
+2024-07-12 22:00:34 INFO: database connection stablised
+2024-07-12 22:00:35 INFO: data saved into the database
+2024-07-12 22:00:35 INFO: connection closed
+2024-07-12 22:00:35 INFO: Read parquet file: scraped_data/green_tripdata_2019-02.parquet
+2024-07-12 22:00:35 INFO: Selected required columns
+2024-07-12 22:00:36 INFO: Dropped rows with null values, remaining rows: 574780
+2024-07-12 22:00:36 INFO: Converted datetime columns to timestamp
+2024-07-12 22:00:36 INFO: Dropping rows having wrong date, remaining rows: 574698
+2024-07-12 22:00:36 INFO: Created trip_duration column
+2024-07-12 22:00:36 INFO: Created average_speed column
+2024-07-12 22:00:36 INFO: database connection stablised
+2024-07-12 22:00:45 INFO: data saved into the database
+2024-07-12 22:00:45 INFO: connection closed
+2024-07-12 22:00:46 INFO: Read parquet file: scraped_data/green_tripdata_2019-03.parquet
+2024-07-12 22:00:46 INFO: Selected required columns
+2024-07-12 22:00:46 INFO: Dropped rows with null values, remaining rows: 600230
+2024-07-12 22:00:46 INFO: Converted datetime columns to timestamp
+2024-07-12 22:00:46 INFO: Dropping rows having wrong date, remaining rows: 600154
+2024-07-12 22:00:46 INFO: Created trip_duration column
+2024-07-12 22:00:46 INFO: Created average_speed column
+2024-07-12 22:00:46 INFO: database connection stablised
+2024-07-12 22:00:55 INFO: data saved into the database
+2024-07-12 22:00:55 INFO: connection closed
+2024-07-12 22:00:56 INFO: Read parquet file: scraped_data/green_tripdata_2019-04.parquet
+2024-07-12 22:00:56 INFO: Selected required columns
+2024-07-12 22:00:56 INFO: Dropped rows with null values, remaining rows: 513717
+2024-07-12 22:00:56 INFO: Converted datetime columns to timestamp
+2024-07-12 22:00:57 INFO: Dropping rows having wrong date, remaining rows: 513684
+2024-07-12 22:00:57 INFO: Created trip_duration column
+2024-07-12 22:00:57 INFO: Created average_speed column
+2024-07-12 22:00:57 INFO: database connection stablised
+2024-07-12 22:01:06 INFO: data saved into the database
+2024-07-12 22:01:06 INFO: connection closed
+2024-07-12 22:01:06 INFO: Read parquet file: scraped_data/green_tripdata_2019-05.parquet
+2024-07-12 22:01:06 INFO: Selected required columns
+2024-07-12 22:01:07 INFO: Dropped rows with null values, remaining rows: 504189
+2024-07-12 22:01:07 INFO: Converted datetime columns to timestamp
+2024-07-12 22:01:07 INFO: Dropping rows having wrong date, remaining rows: 504147
+2024-07-12 22:01:07 INFO: Created trip_duration column
+2024-07-12 22:01:07 INFO: Created average_speed column
+2024-07-12 22:01:07 INFO: database connection stablised
+2024-07-12 22:01:14 INFO: data saved into the database
+2024-07-12 22:01:14 INFO: connection closed
+2024-07-12 22:01:15 INFO: Read parquet file: scraped_data/green_tripdata_2019-06.parquet
+2024-07-12 22:01:15 INFO: Selected required columns
+2024-07-12 22:01:15 INFO: Dropped rows with null values, remaining rows: 470974
+2024-07-12 22:01:15 INFO: Converted datetime columns to timestamp
+2024-07-12 22:01:15 INFO: Dropping rows having wrong date, remaining rows: 470922
+2024-07-12 22:01:15 INFO: Created trip_duration column
+2024-07-12 22:01:15 INFO: Created average_speed column
+2024-07-12 22:01:15 INFO: database connection stablised
+2024-07-12 22:01:28 INFO: data saved into the database
+2024-07-12 22:01:28 INFO: connection closed
+2024-07-12 22:01:29 INFO: Read parquet file: scraped_data/green_tripdata_2019-07.parquet
+2024-07-12 22:01:30 INFO: Selected required columns
+2024-07-12 22:01:30 INFO: Dropped rows with null values, remaining rows: 433104
+2024-07-12 22:01:30 INFO: Converted datetime columns to timestamp
+2024-07-12 22:01:30 INFO: Dropping rows having wrong date, remaining rows: 433056
+2024-07-12 22:01:30 INFO: Created trip_duration column
+2024-07-12 22:01:30 INFO: Created average_speed column
+2024-07-12 22:01:30 INFO: database connection stablised
+2024-07-12 22:01:38 INFO: data saved into the database
+2024-07-12 22:01:38 INFO: connection closed
+2024-07-12 22:01:38 INFO: Read parquet file: scraped_data/green_tripdata_2019-08.parquet
+2024-07-12 22:01:38 INFO: Selected required columns
+2024-07-12 22:01:39 INFO: Dropped rows with null values, remaining rows: 399190
+2024-07-12 22:01:39 INFO: Converted datetime columns to timestamp
+2024-07-12 22:01:39 INFO: Dropping rows having wrong date, remaining rows: 399154
+2024-07-12 22:01:39 INFO: Created trip_duration column
+2024-07-12 22:01:39 INFO: Created average_speed column
+2024-07-12 22:01:39 INFO: database connection stablised
+2024-07-12 22:01:46 INFO: data saved into the database
+2024-07-12 22:01:46 INFO: connection closed
+2024-07-12 22:01:46 INFO: Read parquet file: scraped_data/green_tripdata_2019-09.parquet
+2024-07-12 22:01:46 INFO: Selected required columns
+2024-07-12 22:01:46 INFO: Dropped rows with null values, remaining rows: 389920
+2024-07-12 22:01:46 INFO: Converted datetime columns to timestamp
+2024-07-12 22:01:46 INFO: Dropping rows having wrong date, remaining rows: 389856
+2024-07-12 22:01:47 INFO: Created trip_duration column
+2024-07-12 22:01:47 INFO: Created average_speed column
+2024-07-12 22:01:47 INFO: database connection stablised
+2024-07-12 22:01:52 INFO: data saved into the database
+2024-07-12 22:01:52 INFO: connection closed
+2024-07-12 22:01:53 INFO: Read parquet file: scraped_data/green_tripdata_2019-10.parquet
+2024-07-12 22:01:53 INFO: Selected required columns
+2024-07-12 22:01:53 INFO: Dropped rows with null values, remaining rows: 387005
+2024-07-12 22:01:53 INFO: Converted datetime columns to timestamp
+2024-07-12 22:01:53 INFO: Dropping rows having wrong date, remaining rows: 386973
+2024-07-12 22:01:53 INFO: Created trip_duration column
+2024-07-12 22:01:53 INFO: Created average_speed column
+2024-07-12 22:01:53 INFO: database connection stablised
+2024-07-12 22:01:59 INFO: data saved into the database
+2024-07-12 22:01:59 INFO: connection closed
+2024-07-12 22:02:00 INFO: Read parquet file: scraped_data/green_tripdata_2019-11.parquet
+2024-07-12 22:02:00 INFO: Selected required columns
+2024-07-12 22:02:00 INFO: Dropped rows with null values, remaining rows: 362429
+2024-07-12 22:02:00 INFO: Converted datetime columns to timestamp
+2024-07-12 22:02:00 INFO: Dropping rows having wrong date, remaining rows: 362396
+2024-07-12 22:02:00 INFO: Created trip_duration column
+2024-07-12 22:02:00 INFO: Created average_speed column
+2024-07-12 22:02:00 INFO: database connection stablised
+2024-07-12 22:02:05 INFO: data saved into the database
+2024-07-12 22:02:05 INFO: connection closed
+2024-07-12 22:02:06 INFO: Read parquet file: scraped_data/green_tripdata_2019-12.parquet
+2024-07-12 22:02:06 INFO: Selected required columns
+2024-07-12 22:02:06 INFO: Dropped rows with null values, remaining rows: 359900
+2024-07-12 22:02:06 INFO: Converted datetime columns to timestamp
+2024-07-12 22:02:06 INFO: Dropping rows having wrong date, remaining rows: 359838
+2024-07-12 22:02:06 INFO: Created trip_duration column
+2024-07-12 22:02:06 INFO: Created average_speed column
+2024-07-12 22:02:06 INFO: database connection stablised
+2024-07-12 22:02:12 INFO: data saved into the database
+2024-07-12 22:02:12 INFO: connection closed
+2024-07-12 22:02:12 INFO: green_trips data saved into the database successfully

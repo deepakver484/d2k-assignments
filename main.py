@@ -28,20 +28,20 @@ logger.addHandler(console_handler)
 
 link = 'https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page'
 
-responce = ed.call_func(link)
-data_link = ed.get_data(responce)
+# responce = ed.call_func(link)
+# data_link = ed.get_data(responce)
 
-directory = 'scraped_data'
-os.makedirs(directory, exist_ok=True)
-data_link.to_csv('scraped_data/data_link.csv', index=False)
+# directory = 'scraped_data'
+# os.makedirs(directory, exist_ok=True)
+# data_link.to_csv('scraped_data/data_link.csv', index=False)
 
 df = pd.read_csv('scraped_data/data_link.csv')
 
-for link in df[df.columns['yellow_trips', 'green_trips']].values.flatten():
-    if pd.notna(link):
-        ed.get_file('scraped_data',link)
-    else:
-        continue
+# for link in df[df.columns['yellow_trips', 'green_trips']].values.flatten():
+#     if pd.notna(link):
+#         ed.get_file('scraped_data',link)
+#     else:
+#         continue
 dataset = sd.database_creation('testdb.db')
 
 df['yellow_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_yellow_taxi(file, dataset))
