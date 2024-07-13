@@ -656,3 +656,23 @@
 2024-07-12 23:04:33 INFO: yellow_taxi_aggregate_data table updated with the data
 2024-07-12 23:04:52 INFO: green taxi grouped calculated
 2024-07-12 23:04:52 INFO: green_taxi_aggregate_data table updated with the data
+2024-07-13 10:05:16 INFO: Hourly Analysis for Green taxi is done
+2024-07-13 10:05:16 INFO: Hourly Analysis for Yellow taxi is done
+2024-07-13 10:05:16 INFO: Fare Analysis for Green taxi is done
+2024-07-13 10:05:16 INFO: Fare Analysis for Yellow taxi is done
+2024-07-13 10:42:15 INFO: Fetched data from green_taxi_aggregate_data view.
+2024-07-13 10:42:15 INFO: Fetched data from yellow_taxi_aggregate_data view.
+2024-07-13 10:42:42 INFO: Fetched data from peak_time_green_taxi view.
+2024-07-13 10:48:01 INFO: Fetched data from green_taxi_aggregate_data view.
+2024-07-13 10:48:01 INFO: Fetched data from yellow_taxi_aggregate_data view.
+2024-07-13 10:48:16 INFO: Fetched data from peak_time_green_taxi view.
+2024-07-13 10:53:21 INFO: Fetched data from peak_time_yellow_taxi view.
+2024-07-13 11:12:59 INFO: Fetched data from green_taxi_aggregate_data view.
+2024-07-13 11:12:59 INFO: Fetched data from yellow_taxi_aggregate_data view.
+2024-07-13 11:13:22 INFO: Fetched data from peak_time_green_taxi view.
+2024-07-13 11:15:18 INFO: Fetched data from green_taxi_aggregate_data view.
+2024-07-13 11:15:18 INFO: Fetched data from yellow_taxi_aggregate_data view.
+2024-07-13 11:15:34 INFO: Fetched data from peak_time_green_taxi view.
+2024-07-13 11:21:02 INFO: Fetched data from peak_time_yellow_taxi view.
+2024-07-13 11:23:19 INFO: Fetched data from fare_analysis_yellow_taxi view.
+2024-07-13 11:23:27 INFO: Fetched data from fare_analysis_green_taxi view.

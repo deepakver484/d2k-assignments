@@ -1,8 +1,7 @@
-# import streamlit as st
+import logging
 import pandas as pd
-import sqlite3  # Replace with your specific database library if not using SQLite
-# import matplotlib.pyplot as plt
-# import seaborn as sns
+import sqlite3
+
 
 # Function to connect to the database and fetch data
 def fetch_data(query):
@@ -12,52 +11,108 @@ def fetch_data(query):
     print(df)
     return df
 
-# Fetch data
-# df_green_taxi = fetch_data(query_green_taxi)
-# df_yellow_taxi = fetch_data()
+# Define your SQL queries
+query_green_taxi = '''
+SELECT 
+    date(lpep_pickup_datetime) as Date, 
+    COUNT(vendorid) AS total_trip,
+    AVG(fare_amount) AS avg_fare_amount
+FROM
+    green_taxi
+GROUP BY date(lpep_pickup_datetime) 
+ORDER BY date(lpep_pickup_datetime) 
+'''
 
-# Streamlit app
-# st.title('Taxi Data Analysis')
+query_yellow_taxi = '''
+SELECT 
+    date(tpep_pickup_datetime) as Date, 
+    COUNT(vendorid) AS total_trip,
+    AVG(fare_amount) AS avg_fare_amount
+FROM
+    yellow_taxi
+GROUP BY date(tpep_pickup_datetime)
+ORDER BY Date
+'''
 
-# # Green Taxi Data
-# st.header('Green Taxi Data')
-# st.write(df_green_taxi)
+hourly_analysis_green_taxi = '''
+SELECT 
+    strftime('%H', lpep_pickup_datetime) as Hour, 
+    COUNT(vendorid) AS total_trip
+FROM
+    green_taxi
+GROUP BY strftime('%H', lpep_pickup_datetime) 
+ORDER BY Hour
+'''
 
-# # Plot Green Taxi Data
-# st.subheader('Green Taxi Total Trips Over Time')
-# fig, ax = plt.subplots()
-# sns.lineplot(data=df_green_taxi, x='lpep_pickup_datetime', y='total_trip', ax=ax)
-# ax.set_title('Total Trips for Green Taxi')
-# ax.set_xlabel('Pickup Datetime')
-# ax.set_ylabel('Total Trips')
-# st.pyplot(fig)
+hourly_analysis_yellow_taxi ='''
+SELECT 
+    strftime('%H', tpep_pickup_datetime) as Hour, 
+    COUNT(vendorid) AS total_trip
+FROM
+    yellow_taxi
+GROUP BY strftime('%H', tpep_pickup_datetime)
+ORDER BY Hour
+'''
 
-# st.subheader('Green Taxi Average Fare Over Time')
-# fig, ax = plt.subplots()
-# sns.lineplot(data=df_green_taxi, x='lpep_pickup_datetime', y='avg_fare_amount', ax=ax)
-# ax.set_title('Average Fare Amount for Green Taxi')
-# ax.set_xlabel('Pickup Datetime')
-# ax.set_ylabel('Average Fare Amount')
-# st.pyplot(fig)
+query_fare_analysis_yellow_taxi = '''
+SELECT 
+    distinct passenger_count,
+    fare_amount
+FROM
+    yellow_taxi
+WHERE
+    passenger_count > 0  -- Ensuring we only consider positive passenger counts
+    AND fare_amount > 0  -- Ensuring we only consider positive fare amounts
+'''
 
-# # Yellow Taxi Data
-# st.header('Yellow Taxi Data')
-# st.write(df_yellow_taxi)
+query_fare_analysis_green_taxi = '''
+SELECT 
+    distinct passenger_count,
+    fare_amount
+FROM
+    green_taxi
+WHERE
+    passenger_count > 0  -- Ensuring we only consider positive passenger counts
+    AND fare_amount > 0  -- Ensuring we only consider positive fare amounts
+'''
 
-# # Plot Yellow Taxi Data
-# st.subheader('Yellow Taxi Total Trips Over Time')
-# fig, ax = plt.subplots()
-# sns.lineplot(data=df_yellow_taxi, x='tpep_pickup_datetime', y='total_trip', ax=ax)
-# ax.set_title('Total Trips for Yellow Taxi')
-# ax.set_xlabel('Pickup Datetime')
-# ax.set_ylabel('Total Trips')
-# st.pyplot(fig)
+def aggregated_data():
+    con = sqlite3.connect("testdb.db")
 
-# st.subheader('Yellow Taxi Average Fare Over Time')
-# fig, ax = plt.subplots()
-# sns.lineplot(data=df_yellow_taxi, x='tpep_pickup_datetime', y='avg_fare_amount', ax=ax)
-# ax.set_title('Average Fare Amount for Yellow Taxi')
-# ax.set_xlabel('Pickup Datetime')
-# ax.set_ylabel('Average Fare Amount')
-# st.pyplot(fig)
+    df_yellow_taxi = fetch_data(query_yellow_taxi)
+    logging.info('yellow taxi grouped calculated')
+    df_yellow_taxi.to_sql('yellow_taxi_aggregate_data', con, if_exists="append", index=False)
+    logging.info('yellow_taxi_aggregate_data table updated with the data')
 
+    df_green_taxi = fetch_data(query_green_taxi)
+    logging.info('green taxi grouped calculated')
+    df_green_taxi.to_sql('green_taxi_aggregate_data', con, if_exists="append", index=False)
+    logging.info('green_taxi_aggregate_data table updated with the data')
+    return 'completed'
+
+def analysis_func():
+    green_taxi = fetch_data('SELECT * FROM green_taxi_aggregate_data')
+    green_taxi.to_csv('scraped_data/green_taxi.csv', index= False)
+    logging.info("Fetched data from green_taxi_aggregate_data view.")
+
+    yellow_taxi = fetch_data('SELECT * FROM yellow_taxi_aggregate_data')
+    yellow_taxi.to_csv('scraped_data/yellow_taxi.csv', index= False)
+    logging.info("Fetched data from yellow_taxi_aggregate_data view.")
+    
+    peak_green_taxi = fetch_data(hourly_analysis_green_taxi)
+    peak_green_taxi.to_csv('scraped_data/peak_green_taxi.csv', index= False)
+    logging.info("Fetched data from peak_time_green_taxi view.")
+
+    peak_yellow_taxi = fetch_data(hourly_analysis_yellow_taxi)
+    peak_yellow_taxi.to_csv('scraped_data/peak_yellow_taxi.csv', index= False)
+    logging.info("Fetched data from peak_time_yellow_taxi view.")
+
+    fare_yellow_taxi = fetch_data(query_fare_analysis_yellow_taxi)
+    fare_yellow_taxi.to_csv('scraped_data/fare_yellow_taxi.csv', index= False)
+    logging.info("Fetched data from fare_analysis_yellow_taxi view.")
+
+    fare_green_taxi = fetch_data(query_fare_analysis_green_taxi)
+    fare_green_taxi.to_csv('scraped_data/fare_green_taxi.csv', index= False)
+    logging.info("Fetched data from fare_analysis_green_taxi view.")
+
+    return 'complete'
