@@ -48,10 +48,8 @@ st.pyplot(fig)
 # Show Peak Time Analysis Data
 st.header('Peak Time Analysis')
 df_peak_time_green = pd.read_csv('scraped_data/peak_green_taxi.csv')
-st.subheader('Peak Time for Green Taxi')
 
 df_peak_time_yellow = pd.read_csv('scraped_data/peak_yellow_taxi.csv')
-st.subheader('Peak Time for Yellow Taxi')
 
 # Plot Peak Time Analysis
 st.subheader('Peak Time Analysis for Green and Yellow Taxis')
@@ -66,18 +64,53 @@ st.pyplot(fig)
 # Show Fare Analysis Data
 st.header('Fare Analysis')
 df_fare_analysis_green = pd.read_csv('scraped_data/fare_green_taxi.csv')
-st.subheader('Fare Analysis for Green Taxi')
 
 df_fare_analysis_yellow = pd.read_csv('scraped_data/fare_Yellow_taxi.csv')
-st.subheader('Fare Analysis for Yellow Taxi')
 
-# Plot Fare Analysis
-st.subheader('Fare Analysis for Green and Yellow Taxis')
-fig, ax = plt.subplots()
-sns.scatterplot(data=df_fare_analysis_green, x='passenger_count', y='fare_amount', ax=ax, label='Green Taxi')
-sns.scatterplot(data=df_fare_analysis_yellow, x='passenger_count', y='fare_amount', ax=ax, label='Yellow Taxi', color='orange')
-ax.set_title('Fare Amount vs. Passenger Count')
-ax.set_xlabel('Passenger Count')
-ax.set_ylabel('Fare Amount')
+# Prepare data for Green Taxi Heatmap
+pivot_table_green = df_fare_analysis_green.pivot_table(
+    index='passenger_count',
+    columns='taxi_type',
+    values='fare_amount',
+    aggfunc='mean',  
+    fill_value=0  # Fill missing values with 0
+)
+pivot_table_green['taxi_type'] = 'Green Taxi'
+
+# Prepare data for Yellow Taxi Heatmap
+pivot_table_yellow = df_fare_analysis_yellow.pivot_table(
+    index='passenger_count',
+    columns='taxi_type',
+    values='fare_amount',
+    aggfunc='mean',  
+    fill_value=0  # Fill missing values with 0
+)
+pivot_table_yellow['taxi_type'] = 'Yellow Taxi'
+
+# Plot Fare Analysis Heatmap for Green Taxi
+st.subheader('Fare Analysis Heatmap for Green Taxi')
+fig, ax = plt.subplots(figsize=(10, 6))  # Adjust the size as needed
+sns.heatmap(pivot_table_green.pivot('passenger_count', 'taxi_type', 'fare_amount'),
+            annot=True,
+            cmap='coolwarm',
+            ax=ax,
+            fmt='.2f',
+            cbar_kws={'label': 'Average Fare Amount'})
+ax.set_title('Heatmap of Average Fare Amount for Green Taxi')
+ax.set_xlabel('Taxi Type')
+ax.set_ylabel('Passenger Count')
 st.pyplot(fig)
 
+# Plot Fare Analysis Heatmap for Yellow Taxi
+st.subheader('Fare Analysis Heatmap for Yellow Taxi')
+fig, ax = plt.subplots(figsize=(10, 6))  # Adjust the size as needed
+sns.heatmap(pivot_table_yellow.pivot('passenger_count', 'taxi_type', 'fare_amount'),
+            annot=True,
+            cmap='coolwarm',
+            ax=ax,
+            fmt='.2f',
+            cbar_kws={'label': 'Average Fare Amount'})
+ax.set_title('Heatmap of Average Fare Amount for Yellow Taxi')
+ax.set_xlabel('Taxi Type')
+ax.set_ylabel('Passenger Count')
+st.pyplot(fig)

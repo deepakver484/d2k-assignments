@@ -45,12 +45,12 @@ df = pd.read_csv('scraped_data/data_link.csv')
 #         ed.get_file('scraped_data',link)
 #     else:
 #         continue
-# dataset = sd.database_creation('testdb.db')
+dataset = sd.database_creation('testdb.db')
 
-# df['yellow_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_yellow_taxi(file, dataset))
-# logging.info('yellow_trips data saved into the database successfully')
-# df['green_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_green_taxi(file, dataset))
-# logging.info('green_trips data saved into the database successfully')
+df['yellow_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_yellow_taxi(file, dataset))
+logging.info('yellow_trips data saved into the database successfully')
+df['green_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_green_taxi(file, dataset))
+logging.info('green_trips data saved into the database successfully')
 
-# a.aggregated_data()
+a.aggregated_data()
 a.analysis_func()

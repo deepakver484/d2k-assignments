@@ -56,24 +56,35 @@ ORDER BY Hour
 
 query_fare_analysis_yellow_taxi = '''
 SELECT 
-    distinct passenger_count,
-    fare_amount
+
+    trip_distance,
+    passenger_count,
+    avg(fare_amount)
 FROM
-    yellow_taxi
+    Yellow_taxi
 WHERE
     passenger_count > 0  -- Ensuring we only consider positive passenger counts
     AND fare_amount > 0  -- Ensuring we only consider positive fare amounts
+    
+group by 
+    trip_distance,
+    passenger_count
 '''
 
 query_fare_analysis_green_taxi = '''
 SELECT 
-    distinct passenger_count,
-    fare_amount
+    trip_distance,
+    passenger_count,
+    avg(fare_amount)
 FROM
     green_taxi
 WHERE
     passenger_count > 0  -- Ensuring we only consider positive passenger counts
     AND fare_amount > 0  -- Ensuring we only consider positive fare amounts
+    
+group by 
+    trip_distance,
+    passenger_count
 '''
 
 def aggregated_data():
@@ -93,26 +104,26 @@ def aggregated_data():
 def analysis_func():
     green_taxi = fetch_data('SELECT * FROM green_taxi_aggregate_data')
     green_taxi.to_csv('scraped_data/green_taxi.csv', index= False)
-    logging.info("Fetched data from green_taxi_aggregate_data view.")
+    logging.info("Fetched data from green_taxi_aggregate_data.")
 
     yellow_taxi = fetch_data('SELECT * FROM yellow_taxi_aggregate_data')
     yellow_taxi.to_csv('scraped_data/yellow_taxi.csv', index= False)
-    logging.info("Fetched data from yellow_taxi_aggregate_data view.")
+    logging.info("Fetched data from yellow_taxi_aggregate_data.")
     
     peak_green_taxi = fetch_data(hourly_analysis_green_taxi)
     peak_green_taxi.to_csv('scraped_data/peak_green_taxi.csv', index= False)
-    logging.info("Fetched data from peak_time_green_taxi view.")
+    logging.info("Fetched data from peak_time_green_taxi.")
 
     peak_yellow_taxi = fetch_data(hourly_analysis_yellow_taxi)
     peak_yellow_taxi.to_csv('scraped_data/peak_yellow_taxi.csv', index= False)
-    logging.info("Fetched data from peak_time_yellow_taxi view.")
+    logging.info("Fetched data from peak_time_yellow_taxi.")
 
     fare_yellow_taxi = fetch_data(query_fare_analysis_yellow_taxi)
     fare_yellow_taxi.to_csv('scraped_data/fare_yellow_taxi.csv', index= False)
-    logging.info("Fetched data from fare_analysis_yellow_taxi view.")
+    logging.info("Fetched data from fare_analysis_yellow_taxi.")
 
     fare_green_taxi = fetch_data(query_fare_analysis_green_taxi)
     fare_green_taxi.to_csv('scraped_data/fare_green_taxi.csv', index= False)
-    logging.info("Fetched data from fare_analysis_green_taxi view.")
+    logging.info("Fetched data from fare_analysis_green_taxi.")
 
     return 'complete'
