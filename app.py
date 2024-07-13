@@ -113,7 +113,7 @@ st.header('Fare Analysis')
 
 # Load the data
 df_fare_analysis_green = pd.read_csv('scraped_data/fare_green_taxi.csv')
-df_fare_analysis_yellow = pd.read_csv('scraped_data/fare_Yellow_taxi.csv')
+df_fare_analysis_yellow = pd.read_csv('scraped_data/fare_yellow_taxi.csv')
 
 # Prepare data for Green Taxi Heatmap
 correlation_matrix_green = df_fare_analysis_green.corr()
