@@ -55,4 +55,20 @@ def database_creation(name):
 
     logging.info('Yellow_taxi table created')
 
+    cur.execute('''CREATE TABLE IF NOT EXISTS yellow_taxi_aggregate_data(
+                Date,
+                total_trip,
+                avg_fare_amount 
+                )''')
+
+    logging.info('yellow_taxi_aggregate_data table created')
+
+    cur.execute('''CREATE TABLE IF NOT EXISTS green_taxi_aggregate_data(
+                Date,
+                total_trip,
+                avg_fare_amount 
+                )''')
+
+    logging.info('green_taxi_aggregate_data table created')
+
     return name
