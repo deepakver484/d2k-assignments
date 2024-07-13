@@ -10,37 +10,60 @@ import analysis as a
 st.set_page_config(page_title="Taxi Data Analysis Dashboard", layout="wide")
 st.title('Taxi Data Analysis Dashboard')
 
-# Show Data from Green Taxi Aggregated Table
+# Load the data
 df_green_taxi = pd.read_csv('scraped_data/green_taxi.csv')
 
+# Convert 'Date' column to datetime format
+df_green_taxi['Date'] = pd.to_datetime(df_green_taxi['Date'])
+
+# Extract year and month from 'Date' to aggregate data by month
+df_green_taxi['YearMonth'] = df_green_taxi['Date'].dt.to_period('M')
+
+# Group by 'YearMonth' and aggregate total trips
+monthly_trips = df_green_taxi.groupby('YearMonth')['total_trip'].sum().reset_index()
+
+# Convert 'YearMonth' back to string for plotting
+monthly_trips['YearMonth'] = monthly_trips['YearMonth'].astype(str)
 
 # Plot Green Taxi Data
-st.subheader('Green Taxi Total Trips By Date')
+st.subheader('Green Taxi Total Trips By Month')
 fig, ax1 = plt.subplots()
 
-ax1.set_xlabel('Date')
+ax1.set_xlabel('Month')
 ax1.set_ylabel('Total Trips', color='tab:blue')
-ax1.plot(df_green_taxi['Date'], df_green_taxi['total_trip'], color='tab:blue', label='Total Trips')
+ax1.plot(monthly_trips['YearMonth'], monthly_trips['total_trip'], color='tab:blue', marker='o', label='Total Trips')
 ax1.tick_params(axis='y', labelcolor='tab:blue')
-ax1.set_xticks(df_green_taxi['Date'][::int(len(df_green_taxi['Date'])/20)])  # Show only every 20th date
-ax1.set_xticklabels(df_green_taxi['Date'][::int(len(df_green_taxi['Date'])/20)], rotation=45)
+ax1.set_xticks(monthly_trips['YearMonth'][::max(1, len(monthly_trips['YearMonth'])//12)])  # Show fewer ticks
+ax1.set_xticklabels(monthly_trips['YearMonth'][::max(1, len(monthly_trips['YearMonth'])//12)], rotation=45)
 
 fig.tight_layout()
 st.pyplot(fig)
 
-# Show Data from Yellow Taxi Aggregated Table
+# Load the data
 df_yellow_taxi = pd.read_csv('scraped_data/yellow_taxi.csv')
 
-# Plot Yellow Taxi Data
-st.subheader('Yellow Taxi Total Trips By Date')
+# Convert 'Date' column to datetime format
+df_yellow_taxi['Date'] = pd.to_datetime(df_yellow_taxi['Date'])
+
+# Extract year and month from 'Date' to aggregate data by month
+df_yellow_taxi['YearMonth'] = df_yellow_taxi['Date'].dt.to_period('M')
+
+# Group by 'YearMonth' and aggregate total trips
+monthly_trips = df_yellow_taxi.groupby('YearMonth')['total_trip'].sum().reset_index()
+
+# Convert 'YearMonth' back to string for plotting
+monthly_trips['YearMonth'] = monthly_trips['YearMonth'].astype(str)
+
+# Plot Green Taxi Data
+st.subheader('Green Taxi Total Trips By Month')
 fig, ax1 = plt.subplots()
 
-ax1.set_xlabel('Date')
+ax1.set_xlabel('Month')
 ax1.set_ylabel('Total Trips', color='tab:blue')
-ax1.plot(df_yellow_taxi['Date'], df_yellow_taxi['total_trip'], color='tab:blue', label='Total Trips')
+ax1.plot(monthly_trips['YearMonth'], monthly_trips['total_trip'], color='tab:blue', marker='o', label='Total Trips')
 ax1.tick_params(axis='y', labelcolor='tab:blue')
-ax1.set_xticks(df_yellow_taxi['Date'][::int(len(df_yellow_taxi['Date'])/20)])  # Show only every 20th date
-ax1.set_xticklabels(df_yellow_taxi['Date'][::int(len(df_yellow_taxi['Date'])/20)], rotation=45)
+ax1.set_xticks(monthly_trips['YearMonth'][::max(1, len(monthly_trips['YearMonth'])//12)])  # Show fewer ticks
+ax1.set_xticklabels(monthly_trips['YearMonth'][::max(1, len(monthly_trips['YearMonth'])//12)], rotation=45)
 
 fig.tight_layout()
 st.pyplot(fig)
@@ -63,54 +86,45 @@ st.pyplot(fig)
 
 # Show Fare Analysis Data
 st.header('Fare Analysis')
-df_fare_analysis_green = pd.read_csv('scraped_data/fare_green_taxi.csv')
 
+# Load the data
+df_fare_analysis_green = pd.read_csv('scraped_data/fare_green_taxi.csv')
 df_fare_analysis_yellow = pd.read_csv('scraped_data/fare_Yellow_taxi.csv')
 
 # Prepare data for Green Taxi Heatmap
-pivot_table_green = df_fare_analysis_green.pivot_table(
-    index='passenger_count',
-    columns='taxi_type',
-    values='fare_amount',
-    aggfunc='mean',  
-    fill_value=0  # Fill missing values with 0
-)
-pivot_table_green['taxi_type'] = 'Green Taxi'
+correlation_matrix_green = df_fare_analysis_green.corr()
 
 # Prepare data for Yellow Taxi Heatmap
-pivot_table_yellow = df_fare_analysis_yellow.pivot_table(
-    index='passenger_count',
-    columns='taxi_type',
-    values='fare_amount',
-    aggfunc='mean',  
-    fill_value=0  # Fill missing values with 0
-)
-pivot_table_yellow['taxi_type'] = 'Yellow Taxi'
+correlation_matrix_yellow = df_fare_analysis_yellow.corr()
 
-# Plot Fare Analysis Heatmap for Green Taxi
-st.subheader('Fare Analysis Heatmap for Green Taxi')
-fig, ax = plt.subplots(figsize=(10, 6))  # Adjust the size as needed
-sns.heatmap(pivot_table_green.pivot('passenger_count', 'taxi_type', 'fare_amount'),
+# Plot Fare Analysis Heatmaps
+st.subheader('Correlation Heatmaps for Green and Yellow Taxis')
+
+# Create a figure with 2 subplots side by side
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))  # Adjust the size as needed
+
+# Green Taxi Heatmap
+sns.heatmap(correlation_matrix_green,
             annot=True,
             cmap='coolwarm',
-            ax=ax,
+            ax=ax1,
             fmt='.2f',
-            cbar_kws={'label': 'Average Fare Amount'})
-ax.set_title('Heatmap of Average Fare Amount for Green Taxi')
-ax.set_xlabel('Taxi Type')
-ax.set_ylabel('Passenger Count')
-st.pyplot(fig)
+            cbar_kws={'label': 'Correlation Coefficient'})
+ax1.set_title('Correlation Heatmap for Green Taxi')
+ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45)
+ax1.set_yticklabels(ax1.get_yticklabels(), rotation=0)
 
-# Plot Fare Analysis Heatmap for Yellow Taxi
-st.subheader('Fare Analysis Heatmap for Yellow Taxi')
-fig, ax = plt.subplots(figsize=(10, 6))  # Adjust the size as needed
-sns.heatmap(pivot_table_yellow.pivot('passenger_count', 'taxi_type', 'fare_amount'),
+# Yellow Taxi Heatmap
+sns.heatmap(correlation_matrix_yellow,
             annot=True,
             cmap='coolwarm',
-            ax=ax,
+            ax=ax2,
             fmt='.2f',
-            cbar_kws={'label': 'Average Fare Amount'})
-ax.set_title('Heatmap of Average Fare Amount for Yellow Taxi')
-ax.set_xlabel('Taxi Type')
-ax.set_ylabel('Passenger Count')
+            cbar_kws={'label': 'Correlation Coefficient'})
+ax2.set_title('Correlation Heatmap for Yellow Taxi')
+ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45)
+ax2.set_yticklabels(ax2.get_yticklabels(), rotation=0)
+
+# Display the plot
+fig.tight_layout()
 st.pyplot(fig)

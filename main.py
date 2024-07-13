@@ -6,6 +6,7 @@ import os
 import Sql_database as sd
 import analysis as a
 import sqlite3
+import subprocess
 
 
 logger = logging.getLogger()
@@ -45,12 +46,18 @@ df = pd.read_csv('scraped_data/data_link.csv')
 #         ed.get_file('scraped_data',link)
 #     else:
 #         continue
-dataset = sd.database_creation('testdb.db')
+# dataset = sd.database_creation('testdb.db')
 
-df['yellow_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_yellow_taxi(file, dataset))
-logging.info('yellow_trips data saved into the database successfully')
-df['green_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_green_taxi(file, dataset))
-logging.info('green_trips data saved into the database successfully')
+# df['yellow_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_yellow_taxi(file, dataset))
+# logging.info('yellow_trips data saved into the database successfully')
+# df['green_trips'].str.split('/').str[-1].apply(lambda file: cd.clean_green_taxi(file, dataset))
+# logging.info('green_trips data saved into the database successfully')
 
-a.aggregated_data()
-a.analysis_func()
+# a.aggregated_data()
+# a.analysis_func()
+
+# Command to run the Streamlit app
+command = ["streamlit", "run", "app.py"]
+
+# Run the Streamlit app
+subprocess.run(command)
