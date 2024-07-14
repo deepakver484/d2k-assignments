@@ -24,10 +24,6 @@ The project focuses on the following key goals.
 
 Check out the [Streamlit Dashboard](https://d2k-assignments-in.streamlit.app/?embed_options=light_theme,show_colored_line,show_footer,show_padding) for a detailed visualization and interaction with the data.
 
-## Features
-- Interactive data visualizations
-- Detailed data analysis
-- User-friendly interface
 
 [![View the Dashboard](https://img.shields.io/badge/View_Dashboard-blue?style=for-the-badge&logo=streamlit)](https://d2k-assignments-in.streamlit.app/?embed_options=light_theme,show_colored_line,show_footer,show_padding)
 
